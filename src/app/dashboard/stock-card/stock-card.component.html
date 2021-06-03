@@ -1,0 +1,4 @@
+<div class="stock-card" [class.negative-variation]="stock.variation < 0" [class.neutral-variation]="stock.variation == 0">
+  <div class="stock-header"><h2 class="stock-name">{{stock.name}}</h2><p class ="stock-date">{{stock.date | date: 'dd/MM/yyyy'}}</p></div>
+  <div class="stock-info"><span class="stock-info-value">{{stock.price | currency:'BRL'}}</span><span class="stock-info-variation">{{variation}}</span></div>
+</div>
